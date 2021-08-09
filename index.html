@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="not-to-do-list.css">
+    <title>Not to Do list</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header" >
+            <h1>Not To Do List</h1>
+            <div class="form">
+                <form action="javascript:  void(0);" onsubmit="handleOnSubmit(this)">
+                    <input type="text" name="task" placeholder="Task Name" required>
+                    <input type="number" name="hr" placeholder="5" required>
+                    <input type="submit" value="ADD">
+                </form>
+            </div>
+            <hr />
+        </header>
+        <div class="main">
+            <section class="todo-list">
+            <h3>Task Lists</h3>
+            <ul id="task-list"></ul>
+            <hr/>
+            Total hours allocated <span id="totalhr"></span>
+            </section>
+            <hr />
+            <section class="not-todo-list">
+            <h3>Not To do Lists</h3>
+            <ul id="not-todo-task-list"></ul>
+            <hr/>
+            Total hours allocated <span id="totalhr1"></span>
+            </section>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+<script src="script.js"></script> 
+</body>
+</html>
